@@ -1,0 +1,62 @@
+* Variables: 
+    Las variables son como lugares donde se almacenan datos que luego son utilizados.
+Esos datos pueden ser de diferente tipo: Strings, numeros, booleanos (true or false), null y undefined.
+Las variables se definen con la palabra var, let o const. Son palabras propias del lenguaje de programación por lo que 
+no pueden ser reutilizadas con otros fines más por los que fueron creadas. Por el momento usamos solo var que es de ES5. Let y const 
+pertenecen a ES6.  
+Los datos que se almacenen con la palabra var pueden ser modificados posteriormente en el codigo, pero aquellas con 
+la palabra const no pueden ser modificados: son constantes.
+Además, las variables pueden definirse sin la necesidad de ponerle un valor, es decir, pueden ser creadas sin ningun tipo
+de dato.
+Se las declara de la siguiente forma: se escribe var seguido de un espacio más el nombre de esa variable.
+Si le agregamos un valor a esa variable, le escribimos seguido del nombre de la variable, el operador de asignación y a la derecha 
+del operador el valor, que sería un tipo de dato, por ejemplo un string: var miNombre = 'juan'; (cerramos con punto y coma).
+Podemos llamar luego a esa variable por su nombre sin la necesidad de escribir var nuevamente como cuando se la declara por primera
+vez; podemos asignarle un valor y hasta realizar operaciones.
+
+* Strings:
+    Strings son un tipo de dato del lenguaje de programación, se almacenan en las variables del lado derecho del operador de 
+asignación (=). Siempre se encierran entre comillas simples ('') o comillas dobles (""). Los strings vendrían a ser como una sucesión, 
+un bloque o una cadena de caractéres, que pueden ser numero/s o texto. También pueden realizarse operaciones como concatenar dos 
+strings, por ejemplo: 
+    var nombre= 'Juan';
+    var apellido= 'Cela';
+    var resultado= 'Juan' + 'Cela'; 
+    console.log(resultado);
+La consola nos muestra la unión de ambos strings que tambien puede escribirse como var resultado= nombre + apellido;(usando el 
+nombre de las variables) la concatenación sería: 'Juan Cela'.  
+
+* Funciones (argumentos, `return`):
+    Las funciones son objetos que se pueden llamar o invocar, son formas de resumir cuando hay mucho código que se repite, es una forma
+de recopilar código que después se puede ejecutar por medio del llamado a la función. Son muy importantes en el lenguaje de 
+programación. 
+    Para crear una función se escribe la palabra function seguida de un espacio y luego el nombre de la función que por lo general tiene
+que ser un nombre descriptivo, que diga de qué se trata la función. Luego, siguen los paréntesis donde van los argumentos o los 
+parámetros a ejecutarse en la función y posteriormente los corchetes de aperturra y cierre donde va el código a ejecutarse, la orden 
+para que cierto código haga tal cosa.
+    A las funciones se les pasa ciertos argumentos, que pueden ser ninguno, uno, o más de uno infinitamente. Esos argumentos vendrían 
+a ser como variables donde se les puede adjudicar valores para ser ejecutados cuando se llama a la función, es decir, los valores
+que se desean ejecutar a partir por la cual se haya creado esa función.
+Nota: Los argumentos van entre paréntesis y separados por comas.
+    El 'return' sirve para devolver algo de una función. Solo puede haber un return por función y todo lo que haya por debajo del return
+no se va a ejecutar, es decir, que el return acaba con la ejecución del código devolviendo un algo determinado. Además, sirve para 
+poder acceder a cosas dentro de la función, es decir, que gracias al return los datos pueden salirse de la función para ser utilizados 
+en otra parte que no sea la función y es por eso que se usa return.
+
+* Declaraciones `if`:
+
+    Las declaraciones 'if' son funciones que sirven para decir si cierta condición se cumple o no, y se usa en ese sentido los booleanos
+true y false, es decir, si tal condición es true, se ejecuta el código descripto, en cambio, si es falso, se ejecuta este 
+otro código. Cuando es true se acaba ahí la ejecución de la función y no sigue avanzando.
+    Si hay más de una condición a evaluar se usa 'else if' hasta que no hayan mas condiciones, y si ninguna de esas se cumplen, se 
+agrega por último 'else' para ejecutar ese último código dentro de la función si todas las anteriores fueron false. Entonces quedaría
+if esta condición es true: ejecuta tal código, else if: ejecuta este otro código, else if (tantos else if sean necesarios): ejecuta 
+código, else (si lo anterior fue falso): ejecuta este código.
+
+* Valores booleanos (`true`, `false`):
+
+    Los valores booleanos 'true' y 'false' son un tipo de dato del lenguaje de programación. Tiene dos opciones, por ejemplo: encendido
+y apagado, 0 o 1, activado o desactivado, verdadero o falso, etc. 
+Si el valor se omite o es 0, -0, null, false, NaN, undefined, o la cadena vacía (""), pasan a ser false. 
+Todos los demás valores, incluido cualquier objeto, un arreglo vacío ([]) o la cadena "false", crean un objeto con un valor inicial de
+true.
