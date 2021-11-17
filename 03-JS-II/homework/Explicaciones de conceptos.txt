@@ -1,0 +1,23 @@
+*For:
+    El for es un bucle que sirve para escribir en poco código, aquel código que es demasiado repetitivo y largo, que se 
+volería demasiado tedioso tener que estar mucho tiempo escribiendo el mismo código repitiendo para cada valor que 
+queremos conseguir. Es por ello que existe el bucle For. 
+    'For' crea una variable generalmente llamada 'i' que es por sobre donde se repetirá el código, o el bucle mejor dicho. 
+Luego, viene la condición que nos indica que la repetición se hará siempre y cuando la condición sea true. Y por ultimo,
+se incrementa la variable, es decir, se repite incrementando la variable 'i' teniendo en cuenta la condición del bucle que
+nos dirá que la repetición es hasta cierto punto (hasta cuando sea false). Un problema para la computadora sería hacer un 
+bucle 'For' que repita código tirando valores infinitamente (si es que no quisimos hacer eso), por lo que para evitar eso se
+debe revisar que la condición funcione para que en algún momento tire false y se detenga. Sino con control 'c' paramos la 
+ejecución del script.
+
+*`&&`, `||`, `!`:
+    Estos son los Operadores Lógicos y se usan para saber si dos o más expresiones son verdaderas o falsas, y en tales casos 
+se ejecuta cierto código. Las expresiones se evalúan en orden, es decir, la computadora deja de leer código si el operador
+lógico ya cumplió con su función.
+    &&: Este operador se dice en inglés 'and' y en castellano 'y'. Tira verdadero cuando ambas expresiones son verdaderas y 
+falso cuando una o ambas son falsas.
+    ||: Este operador se dice en inglés 'or' y en castellano 'o'. Tira verdadero cuando una o ambas expresiones son
+verdaderas y falso cuando ambas son falsas.
+    !: Este operador se dice en inglés 'not' y en castellano 'no'. Tira lo contrario al valor booleano de la expresión. Si
+si true tira falso y si es falso tira true. También, existe el doble 'not' ('!!') que vira dos veces el valor, es decir, de 
+true lo pasa a false y de false a true nuevamente, su efecto es doble.
