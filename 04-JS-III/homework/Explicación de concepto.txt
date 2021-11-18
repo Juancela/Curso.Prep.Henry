@@ -1,0 +1,21 @@
+*Arrays:
+    Son listas de elementos, como estructuras donde se guardan datos ordenados. Los arrays son como otro tipo de dato, aunque
+diferente a los basicos que hemos visto anteriormente, por que se pueden guardar en una variable y ser utilizadas. Puede 
+haber en un array tantos elementos uno desee, por lo que sirven para poder guardar muchos datos en una sola variable. Podemos
+acceder luego a cualquier elemento que querramos y agregar o quitar datos del arreglo.
+    Para eso existen las funciones push(), por(), unshift() y shift(). Push() va a agregar elementos al final del arreglo y 
+pop() va a quitar el último elemento de la lista con posibilidad de poder guardarlo en otra variable, es decir que hace dos
+cosas, quita el último elemento de la lista y puede también devolverlo en otra variable, o solo eliminarlo para siempre.
+Unshift() agrega un elemento al comienzo de la lista y shift() elimina el primer elemento de la lista.
+    Para acceder a cierto elemento de la lista se usa un mecanismo de indexación, es decir, los elementos estan ordenados 
+por orden numerico empezando desde cero (0, 1, 2, 3, ...), por lo que para acceder al primer elemento del array se escribe de
+la siguiente forma: array[0]; y así sucesivamente. 
+    En los arrays también disponemos de la propiedad '.length', al igual que en los strings. Sirve para saber cuantos 
+elementos hay en el array. '.length' comienza a contar desde 1 (1, 2, 3, ...), difiere del sistema de indexación que tienen 
+los arrays. Si queremos acceder al último elemento del array con '.length' nos va a dar una posición más arriba a la que 
+realmente es, ya que en los arrays los elementos comienzan a posicionarse desde el cero y no desde el 1 como lo hace el 
+método '.length'. Es por eso que para ello debemos restarle uno al método length: array[array.length - 1];. Con esta forma
+de poder acceder a elementos en un array, nos permite además poder asignarle más elemetos a la lista, por ejemplo para 
+agregar un nombre buscamos la posición donde queremos ubicarlo y con el operador de asignación agregamos el nombre:
+array[2] = 'Juan';. Esto reemplaza el elemento que había en la posición [2] por el nuevo elemento asignado.
+    Para finalizar, cabe agregar que también se pueden usar bucles for para iterar sobre todos los elementos de un arreglo.
