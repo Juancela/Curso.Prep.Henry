@@ -1,0 +1,32 @@
+* Objetos:
+    Los objetos son como los arrays, estructuras donde se pueden guardar muchos datos. La diferencia entre arrays y objetos 
+es que en los arrays los elementos pueden relacionarse unos a otros y en los objetos se relacionan a una sola cosa, es decir
+que dan informacion de una sola cosa, aunque puede haber muchos objetos y aun asi objetos dentro de objetos; y además los
+arrays también pueden situarse como valores en los pares key-value de las propiedades del objeto.
+
+* Propiedades:
+    Un objeto esta formado por propiedades que se las conocen como pares de una 'clave' y un 'valor' para esa clave. Pueden 
+haber muchas propiedades en un objeto. La clave es el identificador, palabra por la cual se identifica a esa propiedad con su 
+valor y por la cual luego usamos (clave) para poder acceder. Las claves tienen que ser únicas, no se pueden repetir aunque sí 
+pueden tener mismos valores. Los valores pueden tener cualquier tipo de dato o incluso una función u otro objeto.
+
+* Métodos:
+    Los métodos son aquellas funciones que se encuentran en un objeto dentro de la propiedad. Se usa un nombre para la clave
+que se "transformará" en un método si en su valor hay una función. Luego, para llamar al método se usa punto, más la clave 
+o el nombre del método seguido de paréntesis, que pueden tener argumentos o no.
+
+* Bucle `for…in`:
+    Es un bucle que se usa para los objetos, diferente al bucle for que funciona bien para los arrays pero no para los 
+objetos, ya que se basa en una variable de número de índice por la cual los objetos no usan. El bucle for...in, en cambio, 
+permite la posibilidad de poder pasear por cada par clave-valor. 
+    Se escriben igual solo que en este bucle, entre paréntesis, se declara una variable, la palabra clave in y el nombre del
+objeto. Esto recorrerá cada clave del objeto y finalizará cuando se hayan iterado todas las claves. Podemos usar esta clave,
+y la notación de corchetes, en nuestro bucle for para acceder al valor que hay en esa clave.
+
+* Notación de puntos vs notación de corchetes:
+    La notación de puntos y corchetes son las formas en las que podemos llegar a cierto valor de cierta propiedad del objeto
+llamando primero al objeto, seguido por la notación (punto o corchete) y luego la clave del par "clave-valor". 
+    Estas dos notaciones se diferencian en que las de puntos es más fácil de escribir pero no funciona por ejemplo si 
+queremos acceder a una variable cuyo contenido interesa. Para eso se usan los corchetes: la palabra clave se escribe entre 
+comillas en los corchetes y sin comillas en la de puntos.
+    No solo se acceden a valores con estas notaciones sino que también sirven para asignar nuevos valores.
